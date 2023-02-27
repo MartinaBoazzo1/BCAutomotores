@@ -1,3 +1,4 @@
+<!-- <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="">GARAGE 42</a>
@@ -20,6 +21,44 @@
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
+</header> -->
+
+
+
+<header class="primary-header">
+  <nav class="navbar container">
+      <a href="index.html" class="logo">GARAGE 42</a>
+      <ul class="nav-list">
+          <li>
+              <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Dates</a>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Testimonials</a>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Contact</a>
+          </li>
+      </ul>
+      <a href="#" class="button">Book now</a>
+  </nav>
+</header>
+
+<section class="hero"></section>
+<section class="demo-content"></section>
+  
+<script>
+  const isScrolling = () => {
+    const headerEl = document.querySelector('.primary-header')
+    let windowPosition = window.scrollY > 250
+    headerEl.classList.toggle('active', windowPosition)
+  }
+  window.addEventListener('scroll', isScrolling)
+</script>
